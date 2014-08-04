@@ -21,6 +21,8 @@
 		35527476198FABEF006167CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35527458198FABEE006167CC /* UIKit.framework */; };
 		3552747E198FABEF006167CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3552747C198FABEF006167CC /* InfoPlist.strings */; };
 		35527480198FABEF006167CC /* DQLabelExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3552747F198FABEF006167CC /* DQLabelExampleTests.m */; };
+		3552748C198FAC54006167CC /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3552748B198FAC54006167CC /* MyLabel.m */; };
+		3552748E198FAE60006167CC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3552748D198FAE60006167CC /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		3552747B198FABEF006167CC /* DQLabelExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DQLabelExampleTests-Info.plist"; sourceTree = "<group>"; };
 		3552747D198FABEF006167CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3552747F198FABEF006167CC /* DQLabelExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DQLabelExampleTests.m; sourceTree = "<group>"; };
+		3552748A198FAC54006167CC /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		3552748B198FAC54006167CC /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
+		3552748D198FAE60006167CC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3552748E198FAE60006167CC /* CoreText.framework in Frameworks */,
 				35527457198FABEE006167CC /* CoreGraphics.framework in Frameworks */,
 				35527459198FABEE006167CC /* UIKit.framework in Frameworks */,
 				35527455198FABEE006167CC /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		35527453198FABEE006167CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3552748D198FAE60006167CC /* CoreText.framework */,
 				35527454198FABEE006167CC /* Foundation.framework */,
 				35527456198FABEE006167CC /* CoreGraphics.framework */,
 				35527458198FABEE006167CC /* UIKit.framework */,
@@ -112,6 +119,7 @@
 		3552745A198FABEE006167CC /* DQLabelExample */ = {
 			isa = PBXGroup;
 			children = (
+				35527489198FAC2A006167CC /* DQLabel */,
 				35527463198FABEE006167CC /* AppDelegate.h */,
 				35527464198FABEE006167CC /* AppDelegate.m */,
 				35527466198FABEF006167CC /* Main.storyboard */,
@@ -150,6 +158,15 @@
 				3552747C198FABEF006167CC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35527489198FAC2A006167CC /* DQLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3552748A198FAC54006167CC /* MyLabel.h */,
+				3552748B198FAC54006167CC /* MyLabel.m */,
+			);
+			name = DQLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,7 @@
 			files = (
 				3552746B198FABEF006167CC /* ViewController.m in Sources */,
 				35527465198FABEE006167CC /* AppDelegate.m in Sources */,
+				3552748C198FAC54006167CC /* MyLabel.m in Sources */,
 				35527461198FABEE006167CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
